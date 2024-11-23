@@ -50,3 +50,14 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// Delete method (menghapus data)
+
+router.delete('/:id', (req, res) => {
+    const pupukIndex = pupuk.findIndex(t => t.id === parseInt(req.params.id));
+    if (pupukIndex === -1) return res.status(404).json({ message: 'Tugas tidak ditemukan' });
+
+    const deletePupuk = pupuk.splice(pupukIndex, 1)[0]; // Menghapus dan menyimpan pupuk yang dihapus
+    res.status(200).json({ message: `Tugas '${deletePupuk.namapupuk}' telah dihapus` });
+
+});
+export default router;
