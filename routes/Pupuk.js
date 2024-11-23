@@ -15,3 +15,7 @@ const pupuk = [
         kadaluarsa: 2024,
     },
 ];
+router.get("/", (req, res) => {
+    res.send(pupuk);
+});
+
