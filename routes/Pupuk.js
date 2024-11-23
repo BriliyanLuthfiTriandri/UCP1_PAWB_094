@@ -60,4 +60,4 @@ router.delete('/:id', (req, res) => {
     res.status(200).json({ message: `Tugas '${deletePupuk.namapupuk}' telah dihapus` });
 
 });
-export default router;
+export default router
