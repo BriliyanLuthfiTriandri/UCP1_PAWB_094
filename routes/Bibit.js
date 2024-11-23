@@ -50,3 +50,15 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// Delete method (menghapus data)
+
+router.delete('/:id', (req, res) => {
+    const bibitIndex = bibit.findIndex(t => t.id === parseInt(req.params.id));
+    if (bibitIndex === -1) return res.status(404).json({ message: 'Tugas tidak ditemukan' });
+
+    const deleteBibit = bibit.splice(bibitIndex, 1)[0]; // Menghapus dan menyimpan bibit yang dihapus
+    res.status(200).json({ message: `Tugas '${deleteBibit.namabibit}' telah dihapus` });
+
+});
+
+export default router;
