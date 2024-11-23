@@ -1,7 +1,3 @@
-HASIL RUN AWAL 
-
-<img width="934" alt="hasilrunawal" src="https://github.com/user-attachments/assets/316e9147-77d2-47ee-a684-5f7a4ae48702">
-
 HASIL RUN CRUD BIBIT
 
 <img width="929" alt="hasilrun1bibit" src="https://github.com/user-attachments/assets/f4d1ff64-da49-4c34-a39d-942f8824e4d9">
